@@ -46,8 +46,83 @@
             </div>
 
 
+            <!--Monthly expanses part -->
+            <div class="expenses-input flex flex-col items-center">
 
-            <script src="first.js"></script>
+                <div>
+                    <h3 class="text-xl font-semibold text-center ">Monthly-Expenses</h3>
+                </div>
+
+                <div class="md:w-8/12 w-11/12 mt-4">
+                    <label class="pl-4" for="Food">Food-Cost: </label>
+                    <input type="text" name="Food" id="food-input" class="bg-gray-300 px-5  w-9/12 py-1.5 ">
+                </div>
+
+                <div class="md:w-8/12 w-11/12 mt-4">
+                    <label class="pl-5" for="Rent">Rent-cost: </label>
+                    <input type="text" name="Rent" id="rent-input" class="bg-gray-300 px-5 w-9/12 py-1.5">
+                </div>
+
+                <div class="md:w-8/12 w-11/12 mt-4">
+                    <label for="Clothes">Clothes-cost: </label>
+                    <input type="text" name="Clothes" id="clothes-input" class="bg-gray-300 w-9/12 py-1.5 px-5">
+                </div>
+
+                <div class="flex items-center">
+                    <button id="calc-btn" class="px-11 py-2 bg-lime-500 my-5 rounded text-white font-medium text-md">
+                        Calculate
+                    </button>
+                </div>
+
+
+
+                <!-- balance  -->
+                <div class="balance-section">
+                    <h3 class="text-center text-xl font-bold my-4">Total Expenses: <span id="expanses-text">0</span>
+                    </h3>
+                    <h3 class="text-center text-xl font-bold my-4">balance: <span id="main-balance">0</span></h3>
+                </div>
+            </div>
+
+
+            <!-- saving part-->
+            <div class="saving-section flex items-center justify-center ">
+                <div class="flex justify-center">
+                    <label class="pt-0.5 mr-1.5" for="Save">Save: </label>
+                    <input type="text" name="Save" id="saving-input" class="bg-gray-300  py-1.5 w-24 md:36  px-5">
+                </div>
+                <div class="px-5 flex justify-center">
+                    <p class="text-lg font-bold">%</p>
+                </div>
+                <div class="bg-yellow-400">
+                    <button id="saving-calc-btn"
+                        class="px-9 py-2 bg-lime-500 rounded text-white font-medium text-md">Calculate</button>
+                </div>
+
+
+
+
+
+            </div>
+            <!-- saving balance  -->
+            <div class="mt-7">
+                <h3 class="text-center text-xl font-bold my-4">Saving Amount: <span id="saving-amount">0</span></h3>
+                <h3 class="text-center text-xl font-bold my-4">Remaining Balance: <span id="Remaining-balace">0</span>
+                </h3>
+            </div>
+
+        </div>
+
+
+
+
+
+
+        </div>
+    </main>
+
+
+    <script src="first.js"></script>
 </body>
 
 </html>
