@@ -22,9 +22,32 @@
         </h1>
     </header>
 
+    <main class="grid lg:grid-cols-2 grid-cols-1 gap-2 mt-11 ">
+
+        <!--imges section -->
+        <div class="imag-div  lg:w-full bg-gray-100 flex justify-items-center">
+            <img class="w-full px-3" src="image/nikas.jpg" alt="" srcset="">
+        </div>
 
 
-    <script src="first.js"></script>
+        <!-- calculation part -->
+        <div class="calc-section  mx-5 rounded bg-gray-100">
+
+            <!-- salary calculate part -->
+            <div class="salary-section flex flex-col justify-center items-center">
+                <header>
+                    <h2 id="error-box" class="h-7 mt-1.5 md:text-2xl text-lg font-bold text-red-600"></h2>
+                    <h3 class="text-xl font-semibold text-center ">Monthly-Income</h3>
+                </header>
+                <div class="md:w-8/12 w-11/12 py-5 ">
+                    <label for="income">Total-Income: </label>
+                    <input type="text" name="Income" id="income-input" class="bg-gray-300 w-9/12 py-1.5 px-5">
+                </div>
+            </div>
+
+
+
+            <script src="first.js"></script>
 </body>
 
 </html>
